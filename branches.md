@@ -1,0 +1,1 @@
+As branch serão utilizadas da seguinte  forma: Dev; onde colocaremos todos os códigos a prova para testes; Prod: Onde estará todo código final que já foi testado na Branch Dev.
