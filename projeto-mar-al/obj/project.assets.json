@@ -8,24 +8,31 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Derick\\.nuget\\packages\\": {}
+    "C:\\Users\\Murilo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Projeto-Mar-al\\projeto-mar-al\\projeto-mar-al.csproj",
+      "projectUniqueName": "C:\\projects\\projeto-mar\\Projeto-Mar-al\\projeto-mar-al\\projeto-mar-al.csproj",
       "projectName": "projeto-mar-al",
-      "projectPath": "C:\\Projetos\\Projeto-Mar-al\\projeto-mar-al\\projeto-mar-al.csproj",
-      "packagesPath": "C:\\Users\\Derick\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Projeto-Mar-al\\projeto-mar-al\\obj\\",
+      "projectPath": "C:\\projects\\projeto-mar\\Projeto-Mar-al\\projeto-mar-al\\projeto-mar-al.csproj",
+      "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
+      "outputPath": "C:\\projects\\projeto-mar\\Projeto-Mar-al\\projeto-mar-al\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Derick\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Murilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -68,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
