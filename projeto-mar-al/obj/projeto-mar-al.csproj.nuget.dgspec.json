@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\projeto-mar\\Projeto-Mar-al\\projeto-mar-al\\projeto-mar-al.csproj": {}
+    "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al\\projeto-mar-al.csproj": {}
   },
   "projects": {
-    "C:\\projects\\projeto-mar\\Projeto-Mar-al\\projeto-mar-al\\projeto-mar-al.csproj": {
+    "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.APPLICATION\\projeto-mar-al.APPLICATION.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\projeto-mar\\Projeto-Mar-al\\projeto-mar-al\\projeto-mar-al.csproj",
-        "projectName": "projeto-mar-al",
-        "projectPath": "C:\\projects\\projeto-mar\\Projeto-Mar-al\\projeto-mar-al\\projeto-mar-al.csproj",
+        "projectUniqueName": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.APPLICATION\\projeto-mar-al.APPLICATION.csproj",
+        "projectName": "projeto-mar-al.APPLICATION",
+        "projectPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.APPLICATION\\projeto-mar-al.APPLICATION.csproj",
         "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\projeto-mar\\Projeto-Mar-al\\projeto-mar-al\\obj\\",
+        "outputPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.APPLICATION\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,15 +22,84 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.DOMAIN\\projeto-mar-al.DOMAIN.csproj": {
+                "projectPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.DOMAIN\\projeto-mar-al.DOMAIN.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.DOMAIN\\projeto-mar-al.DOMAIN.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.DOMAIN\\projeto-mar-al.DOMAIN.csproj",
+        "projectName": "projeto-mar-al.DOMAIN",
+        "projectPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.DOMAIN\\projeto-mar-al.DOMAIN.csproj",
+        "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.DOMAIN\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Murilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -47,8 +116,158 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.INFRA\\projeto-mar-al.INFRA.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.INFRA\\projeto-mar-al.INFRA.csproj",
+        "projectName": "projeto-mar-al.INFRA",
+        "projectPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.INFRA\\projeto-mar-al.INFRA.csproj",
+        "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.INFRA\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Murilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.DOMAIN\\projeto-mar-al.DOMAIN.csproj": {
+                "projectPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.DOMAIN\\projeto-mar-al.DOMAIN.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al\\projeto-mar-al.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al\\projeto-mar-al.csproj",
+        "projectName": "projeto-mar-al",
+        "projectPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al\\projeto-mar-al.csproj",
+        "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Murilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.APPLICATION\\projeto-mar-al.APPLICATION.csproj": {
+                "projectPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.APPLICATION\\projeto-mar-al.APPLICATION.csproj"
+              },
+              "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.DOMAIN\\projeto-mar-al.DOMAIN.csproj": {
+                "projectPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.DOMAIN\\projeto-mar-al.DOMAIN.csproj"
+              },
+              "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.INFRA\\projeto-mar-al.INFRA.csproj": {
+                "projectPath": "C:\\projects\\phaelo\\Projeto-Mar-al\\projeto-mar-al.INFRA\\projeto-mar-al.INFRA.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",

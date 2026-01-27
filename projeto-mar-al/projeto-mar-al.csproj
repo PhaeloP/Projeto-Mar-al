@@ -1,10 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>projeto_mar_al</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\projeto-mar-al.APPLICATION\projeto-mar-al.APPLICATION.csproj" />
+    <ProjectReference Include="..\projeto-mar-al.DOMAIN\projeto-mar-al.DOMAIN.csproj" />
+    <ProjectReference Include="..\projeto-mar-al.INFRA\projeto-mar-al.INFRA.csproj" />
+  </ItemGroup>
 
 </Project>
