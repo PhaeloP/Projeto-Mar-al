@@ -1,11 +1,10 @@
-﻿namespace projeto_mar_al.DOMAIN.Entidadedes
-{
-    public class Cliente
-    {
-        //TODO: Ajuste os campos conforme esta no banco de dados, de acordo com suas colunas
-        public string id { get; set; } 
-        public string endereco { get; set; }
-        
+﻿namespace projeto_mar_al.DOMAIN.Entidades;
 
-    }
+public class Cliente
+{
+    public int id { get; set; }
+    public string? nome { get; set; }
+    public string? email { get; set; }
+    public int idade { get; set; }
+    public string? senha { get; set; }
 }

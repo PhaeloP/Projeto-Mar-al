@@ -1,3 +1,4 @@
+using projeto_mar_al.DOMAIN.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using projeto_mar_al.APPLICATION;
 //TODO: troca a rota para api/cliente sem S

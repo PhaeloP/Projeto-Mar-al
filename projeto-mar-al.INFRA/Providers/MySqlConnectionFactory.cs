@@ -5,11 +5,12 @@ namespace projeto_mar_al.INFRA.Providers
     public class MySqlConnectionFactory
     {
         //TODO: sua connectionstring
-        private const string ConnectionString = "";  //modelo: Server=localhost;Database=nomeBanco;User=root;Password=123;
+        private readonly string _connectionString ="Server=localhost;Port=3306;Database=projeto_mar_al;Uid=root;Pwd=1020;";
+
         public MySqlConnection CreateConnection()
         {
 
-            return new MySqlConnection(ConnectionString);
+            return new MySqlConnection(_connectionString);
         }
     }
 }

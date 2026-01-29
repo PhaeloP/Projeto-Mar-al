@@ -1,4 +1,7 @@
-﻿using projeto_mar_al.DOMAIN.Entidadedes;
+﻿using projeto_mar_al.DOMAIN;
+using projeto_mar_al.DOMAIN.Entidades;
+
+
 
 namespace projeto_mar_al.DOMAIN.Interfaces
 {

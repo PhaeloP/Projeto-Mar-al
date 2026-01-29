@@ -1,12 +1,14 @@
-﻿using projeto_mar_al.DOMAIN.Interfaces;
+﻿using MySql.Data.MySqlClient;
+using projeto_mar_al.DOMAIN;
+using projeto_mar_al.DOMAIN.Entidades;
+using projeto_mar_al.DOMAIN.Interfaces;
 using projeto_mar_al.INFRA.Providers;
+using projeto_mar_al.DOMAIN.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using projeto_mar_al.DOMAIN.Entidadedes;
-using MySql.Data.MySqlClient;
 
 namespace projeto_mar_al.INFRA.Repositories
 {
@@ -22,25 +24,26 @@ namespace projeto_mar_al.INFRA.Repositories
         {
             using var conexao = _connectionFactory.CreateConnection();
             conexao.Open();
-            string cmdText = "SELECT * FROM clientes WHERE id = " + id; //TODO: troque de concatenação para interpolação modelo: $"SELECT * FROM clientes WHERE id = {id}"
-            var cmd = new MySqlCommand(cmdText, conexao);
 
-            using (var reader = cmd.ExecuteReader())
+            string cmdText = "SELECT id, nome, email, idade, senha FROM clientes WHERE id = @id";
+
+            using var cmd = new MySqlCommand(cmdText, conexao);
+            cmd.Parameters.AddWithValue("@id", id);
+
+            using var reader = cmd.ExecuteReader();
+
+            if (!reader.Read())
+                return null;
+
+            return new Cliente
             {
-                if (reader.Read())
-                {
-                    return new Cliente()
-                    {
-                        id = reader.GetString("id"), //TODO: tipos incorreto, string e int, e nomes devem ser o mesmso da classe Cliente
-                        endereco = reader.GetString("nome"),
-                        
-                    };
-                }
+                id = Convert.ToInt32(reader["id"]),
+                nome = reader["nome"]?.ToString(),
+                email = reader["email"]?.ToString(),
+                idade = Convert.ToInt32(reader["idade"]),
+                senha = reader["senha"]?.ToString()
+            };
 
-                return new Cliente(); //TODO: DESAFIO SUPREMO: troca esse cliente vazio quando nao acha nada, para uma menssagem escrito "Not Found"
-                
             }
-        }
-
     }
 }
